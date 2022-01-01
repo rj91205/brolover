@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: purple;
+    color: white;
+    justify-content: space-between;
+    padding: 25px 0px;
+    font-size: 16px;
+    width: 100vw;
+}
+.name{
+    font-size: 1.5em;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    padding: 0 20px;
+    
+}
+nav ul li{
+    list-style: none;
+    font-size: 16px;
+}
+nav ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+
+main{
+    height: 1200px;
+    width: 100vw;
+    /* background-color: gray; */
+}
+.main{
+    position: relative;
+    text-align: center;
+    color: black;
+    height: 550px;
+    width: 100vw;
+    margin: auto;
+    background-color: #787575;
+    /* height: 600px; */
+}
+.main img{
+    padding-top: 10px;
+    height: 500px;
+    width: 70%;
+    position: relative;
+    z-index: auto;
+    filter:grayscale(90%);
+}
+.main div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    display: flex;
+    height: 300px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+.right{
+    display: flex;
+    width: 85%;
+}
+.right div{
+    padding: 0px 10px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    display: flex;
+    width: 85%;
+}
+.left div{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    height: 270px;
+    width: 200px;
+}
+.left img{
+    height: 270px;
+    width: 200px;
+}
+@media (max-width:596px){
+    nav{
+        width: 100vw;
+    }
+    .name{
+        font-size: 1.3em;
+    }
+    nav ul{
+        display: none;
+    }
+    main{
+        width: 100vw;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0;
+        /* height: 300px; */
+        background-color: ivory;
+        width: 85%;
+    }
+    .right{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        padding: 0 0;
+        background-color: ivory;
+        padding-bottom: 10px;
+    }
+    .container{
+        flex-wrap: wrap;
+        /* width: 100vw; */
+        padding: 0 0;
+        height: 700px;
+    }
+    .main img{
+        width: 95%;
+    }
+}
